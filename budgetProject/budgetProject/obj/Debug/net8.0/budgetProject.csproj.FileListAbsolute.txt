@@ -1,0 +1,13 @@
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/bin/Debug/net8.0/budgetProject.deps.json
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/bin/Debug/net8.0/budgetProject.dll
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/bin/Debug/net8.0/budgetProject.pdb
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.csproj.AssemblyReference.cache
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.AssemblyInfoInputs.cache
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.AssemblyInfo.cs
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.csproj.CoreCompileInputs.cache
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.sourcelink.json
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.dll
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/refint/budgetProject.dll
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/budgetProject.pdb
+/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetProject/obj/Debug/net8.0/ref/budgetProject.dll
