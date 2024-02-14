@@ -26,7 +26,9 @@ public class BudgetService: IBudgetService
 
         return (result.Object != null, result.Key);
     }
-
+    
+    
+    //todo clean code
     public async Task<(bool IsSuccess, budget budget)> GetBudgetAsync(string name)
     {
         var result = await _firebaseClient
@@ -47,6 +49,7 @@ public class BudgetService: IBudgetService
         return (false, null);
     }
 
+    //todo clean code
     public async Task<(bool IsSuccess, string result)> UpdateBudgetAsync(budget budget, amountDto amountToAdd)
     {
         var result = await _firebaseClient
@@ -58,7 +61,7 @@ public class BudgetService: IBudgetService
         {
             if (amountToAdd != null)
             {
-                budget.Amount += amountToAdd.Amount;
+                budget.updateAmount(amountToAdd.Amount);
             }
             
             await _firebaseClient

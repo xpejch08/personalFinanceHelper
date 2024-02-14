@@ -63,6 +63,7 @@ public class createBudgetController : ControllerBase
         return returnAdequateResponse();
     }
     
+    //todo clean code
     [HttpGet ("{name}")]
     public async Task<IActionResult> GetBudget(string name)
     {
@@ -77,6 +78,8 @@ public class createBudgetController : ControllerBase
         return NotFound();
     }
     
+    
+    //todo clean code
     [HttpPost ("{name}/AddToBudget")]
     public async Task<IActionResult> AddToBudget(string name, [FromBody] amountDto amountDto)
     {

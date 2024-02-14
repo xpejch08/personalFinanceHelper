@@ -14,7 +14,7 @@ public class budget
     }
 
 
-    private void addToBudget(decimal addedAmount)
+    public void updateAmount(decimal addedAmount)
     {
         Amount += addedAmount;
     }
