@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj": {}
+    "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj": {}
   },
   "projects": {
-    "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj": {
+    "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj",
+        "projectUniqueName": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj",
         "projectName": "core",
-        "projectPath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj",
+        "projectPath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj",
         "packagesPath": "/home/stepan/.nuget/packages/",
-        "outputPath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/obj/",
+        "outputPath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/stepan/.nuget/NuGet/NuGet.Config"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/236/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

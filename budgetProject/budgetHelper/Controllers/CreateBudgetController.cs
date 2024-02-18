@@ -13,7 +13,11 @@ public class createBudgetController : ControllerBase
     private readonly IBudgetService _budgetService;
     private Boolean mSuccessful;
     private string mKey;
-    private budgetDto mBudget;
+    private budgetDto mBudgetDto;
+    private budget mBudget;
+    private transaction mTransaction;
+    private amountDto mAmountDto;
+    private transactionDto mTransactionDto;
     
     public createBudgetController(IBudgetService budgetService)
     {
@@ -24,10 +28,29 @@ public class createBudgetController : ControllerBase
     {
         return new budget()
         { 
-            Name = mBudget.Name,
-            Amount = mBudget.Amount,
-            Category = mBudget.Category,
-            DateCreated = mBudget.DateCreated
+            Name = mBudgetDto.Name,
+            Amount = mBudgetDto.Amount,
+            Category = mBudgetDto.Category,
+            DateCreated = mBudgetDto.DateCreated
+        };
+    }
+    
+    private transaction mapTransacttionDtoToTransaction()
+    {
+        return new transaction()
+        { 
+            Name = mTransactionDto.Name,
+            Amount = mTransactionDto.Amount,
+            Budget = mTransactionDto.Budget,
+            DateCreated = mTransactionDto.DateCreated
+        };
+    }
+
+    private transaction mapAmountDtoToTransaction()
+    {
+        return new transaction()
+        {
+            Amount = mAmountDto.Amount
         };
     }
 
@@ -53,27 +76,31 @@ public class createBudgetController : ControllerBase
             return HandleError();
         }
     }
+
+    private void printBudgetToCommandLine()
+    {
+        Console.WriteLine(mBudget);
+        Console.WriteLine("HELLO");
+    }
     
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] budgetDto newBudget)
     {
-        mBudget = newBudget;
-        (mSuccessful, mKey) = await _budgetService.CreateBudgetAsync(mBudget);
+        mBudgetDto = newBudget;
+        (mSuccessful, mKey) = await _budgetService.CreateBudgetAsync(mBudgetDto);
 
         return returnAdequateResponse();
     }
     
-    //todo clean code
     [HttpGet ("{name}")]
     public async Task<IActionResult> GetBudget(string name)
     {
-        var budget = await _budgetService.GetBudgetAsync(name);
-        Console.WriteLine(budget.budget.Name);
-        Console.WriteLine("HELLO");
-        if (budget.IsSuccess)
+        (mSuccessful,mBudget) = await _budgetService.GetBudgetAsync(name);
+        printBudgetToCommandLine();
+        if (mSuccessful)
         {
-            Console.WriteLine(budget.budget);
-            return Ok(budget);
+            printBudgetToCommandLine();
+            return Ok(mBudget);
         }
         return NotFound();
     }
@@ -83,14 +110,31 @@ public class createBudgetController : ControllerBase
     [HttpPost ("{name}/AddToBudget")]
     public async Task<IActionResult> AddToBudget(string name, [FromBody] amountDto amountDto)
     {
-        var budget = await _budgetService.GetBudgetAsync(name);
-        if (budget.IsSuccess)
+        (mSuccessful,mBudget) = await _budgetService.GetBudgetAsync(name);
+        mAmountDto = amountDto;
+        mTransaction = mapAmountDtoToTransaction();
+        if (mSuccessful)
         {
-            await _budgetService.UpdateBudgetAsync(budget.budget, amountDto);
-            return Ok(budget.budget);
+            await _budgetService.UpdateBudgetAsync(mBudget, mTransaction);
+            return Ok(mBudget);
         }
         return NotFound();
     }
 
+    
+    [HttpPost ("CreateTransaction")]
+    public async Task<IActionResult> CreateTransaction([FromBody] transactionDto newTransaction)
+    {
+        mTransactionDto = newTransaction;
+        mSuccessful = await _budgetService.CreateTransaction(mTransactionDto);
+
+
+        if (mSuccessful)
+        {
+            return Ok(mTransactionDto);   
+        }
+
+        return NotFound();
+    }
 }
 

@@ -1,4 +1,6 @@
+using System.Transactions;
 using core.interfaces;
+using Firebase.Database.Http;
 
 namespace core.services;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +28,29 @@ public class BudgetService: IBudgetService
 
         return (result.Object != null, result.Key);
     }
-    
+
+    public async Task<bool> CreateTransaction(transactionDto newTransaction)
+    {
+        var getResult = await _firebaseClient
+            .Child("budgets")
+            .OrderBy("Name")
+            .EqualTo(newTransaction.Budget)
+            .OnceAsync<budget>();
+
+        if (getResult.Any())
+        {
+            var Budget = getResult.First().Object;
+            newTransaction.Name = Budget.Name;
+            
+             var postResult = await _firebaseClient
+                .Child("transactions")
+                .PostAsync(newTransaction);
+             return (postResult.Object != null);
+        }
+
+        return false;
+    }
+
     
     //todo clean code
     public async Task<(bool IsSuccess, budget budget)> GetBudgetAsync(string name)
@@ -50,7 +74,7 @@ public class BudgetService: IBudgetService
     }
 
     //todo clean code
-    public async Task<(bool IsSuccess, string result)> UpdateBudgetAsync(budget budget, amountDto amountToAdd)
+    public async Task<(bool IsSuccess, string result)> UpdateBudgetAsync(budget budget, transaction transaction)
     {
         var result = await _firebaseClient
             .Child("budgets")
@@ -59,9 +83,9 @@ public class BudgetService: IBudgetService
 
         if (result != null)
         {
-            if (amountToAdd != null)
+            if (transaction.Amount != 0)
             {
-                budget.updateAmount(amountToAdd.Amount);
+                budget.updateAmount(transaction.Amount);
             }
             
             await _firebaseClient

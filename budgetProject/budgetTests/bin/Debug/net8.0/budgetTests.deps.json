@@ -1812,7 +1812,8 @@
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
           "FirebaseDatabase.net": "4.2.0",
-          "Microsoft.AspNetCore.Mvc": "2.2.0"
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "System.Linq": "4.3.0"
         },
         "runtime": {
           "core.dll": {}

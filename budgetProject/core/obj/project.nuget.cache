@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9sNoxCSka+FGCZIdSB09VMgaGLlxAhaSwlfnlCgoPsqIGKKVBqNSQD2ua7IreZVZJHXWUfu+b8ol1ZgFvSVqNA==",
+  "dgSpecHash": "x3j1DXAfVBWitlbUvxTP11m/XOrkinRLs+47RRbBMJO0Mh2wNS8FbP/RoES6RNJ3EQLmYcp26ARo6ZVZDicw9Q==",
   "success": true,
-  "projectFilePath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj",
+  "projectFilePath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj",
   "expectedPackageFiles": [
     "/home/stepan/.nuget/packages/firebaseadmin/2.4.0/firebaseadmin.2.4.0.nupkg.sha512",
     "/home/stepan/.nuget/packages/firebasedatabase.net/4.2.0/firebasedatabase.net.4.2.0.nupkg.sha512",

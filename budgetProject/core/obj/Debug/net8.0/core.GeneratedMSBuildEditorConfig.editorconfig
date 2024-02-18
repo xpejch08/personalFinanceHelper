@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = core
-build_property.ProjectDir = /home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/
+build_property.ProjectDir = /home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

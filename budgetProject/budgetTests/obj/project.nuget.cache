@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zX5yz7m+F7k0v7i1DXFGz9jthKc/TpEO3qj6WyR8dBZUboVp55j3QuQQgQitsIUOlIDR9P2/X+KXbEh0EthpSA==",
+  "dgSpecHash": "2zjXhj+WLwZuxaOw8QG3WhUoLt3rN2cre1ZNgEb77kotIn6yMJ9lCHhoR898Ua+3nD8Pij4jJfw4rlqRHPBn+Q==",
   "success": true,
-  "projectFilePath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetTests/budgetTests.csproj",
+  "projectFilePath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetTests/budgetTests.csproj",
   "expectedPackageFiles": [
     "/home/stepan/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/stepan/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",

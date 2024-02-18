@@ -8464,11 +8464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetHelper/budgetHelper.csproj",
+      "projectUniqueName": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/budgetHelper.csproj",
       "projectName": "budgetHelper",
-      "projectPath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetHelper/budgetHelper.csproj",
+      "projectPath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/budgetHelper.csproj",
       "packagesPath": "/home/stepan/.nuget/packages/",
-      "outputPath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/budgetHelper/obj/",
+      "outputPath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/stepan/.nuget/NuGet/NuGet.Config"
@@ -8483,8 +8483,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj": {
-              "projectPath": "/home/stepan/Documents/rand/finnanceHelper/personalFinanceHelper/budgetProject/core/core.csproj"
+            "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj": {
+              "projectPath": "/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/core/core.csproj"
             }
           }
         }
@@ -8527,7 +8527,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/236/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

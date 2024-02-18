@@ -18,4 +18,5 @@ public class budget
     {
         Amount += addedAmount;
     }
+    
 }
