@@ -3,4 +3,5 @@ key.json
 appsettings.json
 Program.cs
 .idea
+.vscode
 
