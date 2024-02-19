@@ -42,9 +42,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Firebase.Auth": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "FirebaseAdmin": {
               "target": "Package",
               "version": "[2.4.0, )"
+            },
+            "FirebaseAuth": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "FirebaseDatabase.net": {
               "target": "Package",
@@ -115,6 +127,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.0, )"
@@ -197,6 +213,10 @@
             "FirebaseAdmin": {
               "target": "Package",
               "version": "[2.4.0, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "FirebaseDatabase.net": {
               "target": "Package",

@@ -9,6 +9,7 @@
       "core/1.0.0": {
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
+          "FirebaseAuthentication.net": "4.1.0",
           "FirebaseDatabase.net": "4.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "System.Linq": "4.3.0"
@@ -30,10 +31,21 @@
           }
         }
       },
+      "FirebaseAuthentication.net/4.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Firebase.Auth.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
       "FirebaseDatabase.net/4.2.0": {
         "dependencies": {
           "LiteDB": "4.1.4",
-          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json": "13.0.2",
           "System.Reactive": "4.0.0"
         },
         "runtime": {
@@ -46,7 +58,7 @@
       "Google.Api.Gax/3.2.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Api.Gax.dll": {
@@ -96,7 +108,7 @@
       },
       "Google.Apis.Core/1.49.0": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {
@@ -331,7 +343,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.2.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
@@ -790,7 +802,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json": "13.0.2",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -997,18 +1009,18 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.2": {
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.1.25517"
+            "fileVersion": "13.0.2.27524"
           }
         }
       },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
@@ -1824,6 +1836,13 @@
       "path": "firebaseadmin/2.4.0",
       "hashPath": "firebaseadmin.2.4.0.nupkg.sha512"
     },
+    "FirebaseAuthentication.net/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pShi5v9cvT5bUWZDm261lO4uxJHvzOvpj46YHrL3uCB1WBeyCIcpoVakAQ2xHTu1dpmV86/BzSNRpqIGNp860g==",
+      "path": "firebaseauthentication.net/4.1.0",
+      "hashPath": "firebaseauthentication.net.4.1.0.nupkg.sha512"
+    },
     "FirebaseDatabase.net/4.2.0": {
       "type": "package",
       "serviceable": true,
@@ -2370,12 +2389,12 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.1": {
+    "Newtonsoft.Json/13.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
-      "path": "newtonsoft.json/13.0.1",
-      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",

@@ -116,3 +116,12 @@
 /home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/obj/Debug/net8.0/budgetHelper.genruntimeconfig.cache
 /home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/obj/Debug/net8.0/ref/budgetHelper.dll
 /home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/key.json
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/Firebase.Auth.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/FirebaseAuth.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/jose-jwt.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/System.Net.Http.Formatting.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/System.ServiceModel.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/BouncyCastle.Crypto.dll
+/home/stepan/Documents/projects/myProjects/personalFinanceHelper/budgetProject/budgetHelper/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll

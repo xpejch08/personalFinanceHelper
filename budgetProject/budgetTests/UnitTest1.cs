@@ -19,7 +19,7 @@ public class BudgetControllerTests
         mockService.Setup(service => service.CreateBudgetAsync(It.IsAny<budgetDto>()))
             .ReturnsAsync((true, "firebase_generated_id"));
     
-        var controller = new createBudgetController(mockService.Object);
+        var controller = new BudgetController(mockService.Object);
 
         // Act
         var result = await controller.Create(budgetDto); // Passing budgetDto as expected by the controller.

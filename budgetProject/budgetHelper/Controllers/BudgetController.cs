@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 [ApiController]
 [Route("[controller]")]
-public class createBudgetController : ControllerBase
+public class BudgetController : ControllerBase
 {
     private readonly IBudgetService _budgetService;
     private Boolean mSuccessful;
@@ -19,7 +19,7 @@ public class createBudgetController : ControllerBase
     private amountDto mAmountDto;
     private transactionDto mTransactionDto;
     
-    public createBudgetController(IBudgetService budgetService)
+    public BudgetController(IBudgetService budgetService)
     {
         _budgetService = budgetService;
     }
@@ -32,17 +32,6 @@ public class createBudgetController : ControllerBase
             Amount = mBudgetDto.Amount,
             Category = mBudgetDto.Category,
             DateCreated = mBudgetDto.DateCreated
-        };
-    }
-    
-    private transaction mapTransacttionDtoToTransaction()
-    {
-        return new transaction()
-        { 
-            Name = mTransactionDto.Name,
-            Amount = mTransactionDto.Amount,
-            Budget = mTransactionDto.Budget,
-            DateCreated = mTransactionDto.DateCreated
         };
     }
 
